@@ -15,3 +15,27 @@ header {
   text-decoration: none;
   font-weight: bold;
 }
+
+.box {
+  border: 1px solid black;
+  max-width: 500px;
+}
+
+.box-head {
+  border-bottom: 1px solid black;
+  background: #3988AA;
+  color: #fff;
+}
+
+.contents-list {
+  display: flex;
+  margin: 0 10px;
+}
+
+.title {
+  width: 30%;
+}
+
+.about-wrap {
+
+}
