@@ -70,6 +70,21 @@ header {
   width: 95%;
 }
 
+.contact-wrap button {
+  border-style: solid;
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  border-top-color: #D9DFEA;
+  border-left-color: #D9DFEA;
+  border-bottom-color: #337591;
+  border-right-color: #337591;
+  background-color: #3988AA;
+  color: #fff;
+  font-size: 11px;
+}
+
 /* common */
 .pt-4 { padding-top: 4px; }
 .pb-4 { padding-bottom: 4px; }
