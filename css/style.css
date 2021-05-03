@@ -65,6 +65,7 @@ header {
 .menu-wrap {
   height: 100%;
   width: 100px;
+  margin-right: 100px;
 }
 
 .menu-wrap ul {
@@ -92,7 +93,10 @@ header {
 }
 
 .about-wrap {
-  margin-left: 100px;
+}
+
+.story-wrap {
+  margin-bottom: 24px;
 }
 
 .story-text {
