@@ -32,6 +32,10 @@ header {
   padding: 24px 0;
 }
 
+.content-wrap.contact {
+  height: 500px;
+}
+
 .box {
   border: 1px solid black;
   max-width: 500px;
@@ -58,5 +62,15 @@ header {
   margin: 0 10px;
 }
 
+.contact-wrap {
+  padding: 8px 10px;
+}
+
+.contact-wrap input, textarea {
+  width: 95%;
+}
+
+/* common */
 .pt-4 { padding-top: 4px; }
 .pb-4 { padding-bottom: 4px; }
+.text-align-center { text-align: center; }
