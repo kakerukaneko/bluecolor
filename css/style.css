@@ -116,7 +116,8 @@ header {
   border-right-color: #337591;
   background-color: #3988AA;
   color: #fff;
-  font-size: 11px;
+  font-size: 12px;
+  cursor: pointer;
 }
 
 /* common */
