@@ -21,7 +21,15 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+}
+
+.content-wrap.about {
   height: 500px;
+}
+
+.content-wrap.story {
+  padding: 24px 0;
 }
 
 .box {
@@ -46,6 +54,9 @@ header {
   width: 100px;
 }
 
-.about-wrap {
-
+.story-text {
+  margin: 0 10px;
 }
+
+.pt-4 { padding-top: 4px; }
+.pb-4 { padding-bottom: 4px; }
