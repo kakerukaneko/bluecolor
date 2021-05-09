@@ -1,1 +1,1 @@
-# bluecolor
+# Bluecolor, Inc.
