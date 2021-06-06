@@ -22,6 +22,11 @@ header {
   display: flex;
 }
 
+.content-wrap.top img {
+  width: 500px;
+}
+
+
 .content-wrap.menu {
   height: 150px;
   justify-content: flex-start;
@@ -65,7 +70,6 @@ header {
 .menu-wrap {
   height: 100%;
   width: 100px;
-  margin-right: 100px;
 }
 
 .menu-wrap ul {
@@ -93,6 +97,7 @@ header {
 }
 
 .about-wrap {
+  min-width: 500px;
 }
 
 .story-wrap {
@@ -104,6 +109,10 @@ header {
 }
 
 .contact-wrap {
+  min-width: 500px;
+}
+
+.contact-text {
   padding: 8px 10px;
 }
 
@@ -131,6 +140,7 @@ header {
 .pt-4 { padding-top: 4px; }
 .pb-4 { padding-bottom: 4px; }
 .text-align-center { text-align: center; }
+.margin-auto { margin: 0 auto }
 
 ::-moz-selection {
 	background-color: #3988AA;
