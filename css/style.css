@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'BunglerLight';
+	src: url(../fonts/BunglerLight.ttf);
+}
+
 body {
   font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
   font-size: 12px;
@@ -12,10 +17,10 @@ header {
 }
 
 .head-logo {
+  font-family: BunglerLight;
   color: black;
-  font-size: 24px;
+  font-size: 48px;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .content-wrap {
