@@ -8,13 +8,13 @@ body {
   font-size: 12px;
   color: black;
   min-height: 500px;
-  margin: 0 12px;
 }
 
 header {
   max-width: 1000px;
   padding-top: 12px;
   padding-bottom: 12px;
+  padding-left: 20px;
 }
 
 .head-logo {
@@ -23,8 +23,14 @@ header {
   text-decoration: none;
 }
 
+.wrap {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
 .content-wrap {
   display: flex;
+  justify-content: center;
 }
 
 .content-wrap.top img {
@@ -75,6 +81,7 @@ header {
 .menu-wrap {
   height: 100%;
   width: 100px;
+  margin-right: 36px;
 }
 
 .menu-wrap ul {
