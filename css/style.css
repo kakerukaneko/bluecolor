@@ -33,6 +33,15 @@ header {
   justify-content: center;
 }
 
+@media screen and (max-width: 800px) {
+  .content-wrap {
+    margin: 0 12px;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
 .content-wrap.top img {
   width: 500px;
 }
@@ -106,6 +115,13 @@ header {
   text-decoration: none;
   display: block;
   padding: 0 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .menu-wrap {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .about-wrap {
