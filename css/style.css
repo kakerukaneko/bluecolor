@@ -44,6 +44,8 @@ header {
 
 .content-wrap.top img {
   width: 500px;
+  object-fit: cover;
+  height: 332px;
 }
 
 @media screen and (max-width: 800px) {
@@ -53,6 +55,7 @@ header {
 
   .content-wrap.top img {
     max-width: 100%;
+    height: 181px;
   }
 }
 
