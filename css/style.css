@@ -154,6 +154,10 @@ header {
   .text {
     width: 100%;
   }
+
+  .sp-mb-20 {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -207,6 +211,7 @@ header {
 /* common */
 .pt-4 { padding-top: 4px; }
 .pb-4 { padding-bottom: 4px; }
+.mb-20 { margin-bottom: 20px; }
 .text-align-center { text-align: center; }
 .margin-auto { margin: 0 auto }
 
