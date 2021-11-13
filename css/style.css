@@ -5,7 +5,7 @@
 
 body {
   font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   color: black;
   min-height: 500px;
 }
@@ -137,7 +137,7 @@ header {
 }
 
 .title {
-  width: 100px;
+  width: 80px;
 }
 
 @media screen and (max-width: 800px) {
