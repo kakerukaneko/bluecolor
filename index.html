@@ -1,68 +1,255 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="神奈川県横浜市に本社を置くソフトウェア開発会社">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BLUECOLOR - ソフトウェア開発会社</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☮️</text></svg>">
+    <meta charset="UTF-8">
+    <meta name="description" content="神奈川県横浜市に本社を置くソフトウェア開発会社">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluecolor, inc.</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☮️</text></svg>">
 </head>
 <body>
-  <header>
-    <div class="logo">BLUECOLOR</div>
-    <nav>
-      <ul>
-        <li><a href="#story">Story</a></li>
-        <li><a href="#company">Company</a></li>
-        <li><a href="#story">Works</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- ヘッダー -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Bluecolor<span>, inc.</span></div>
+                <ul class="nav-links">
+                    <li><a href="#home">ホーム</a></li>
+                    <li><a href="#services">サービス</a></li>
+                    <li><a href="#cases">事例</a></li>
+                    <li><a href="#team">チーム</a></li>
+                    <li><a href="#contact" class="cta-button">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <main>
-    <section id="story" class="content-section">
-      <img src="images/top.jpeg" alt="Our Story Image" class="section-image">
-      <h1>Our Story</h1>
-      <p>創業者が抱いた情熱とビジョンをもとに、BLUECOLORは成長を続けてきました。
-      <a href="story-detail.html" class="read-more-link">Read More</a></p>
+    <!-- ヒーローセクション -->
+    <section class="hero" id="home">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="container hero-content">
+            <h1>革新的なソフトウェアソリューションで<br>ビジネスの未来を創造</h1>
+            <p>最先端の技術とクリエイティブな思考で、お客様のビジネス課題を解決する革新的なソフトウェアを開発します。</p>
+            <div class="hero-buttons">
+                <a href="#services" class="cta-button">サービスを見る</a>
+                <a href="#contact" class="secondary-button">お問い合わせ</a>
+            </div>
+        </div>
     </section>
 
-    <section id="company" class="content-section">
-      <img src="images/top.jpeg" alt="About Us Image" class="section-image">
-      <h1>Company</h1>
-      <p>BLUECOLORは、神奈川県横浜市に本社を置くソフトウェア開発会社です。
-      <a href="about-detail.html" class="read-more-link">Read More</a></p>
+    <!-- サービスセクション -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>提供サービス</h2>
+                <p>お客様のニーズに合わせた幅広いソフトウェア開発サービスを提供しています。</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h3>カスタムソフトウェア開発</h3>
+                        <p>ビジネスニーズに合わせた独自のソフトウェアを設計・開発します。スケーラブルで高品質なソリューションを提供します。</p>
+                        <a href="#" class="learn-more">詳細を見る</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h3>モバイルアプリ開発</h3>
+                        <p>iOSとAndroid両方のプラットフォームに対応したネイティブおよびクロスプラットフォームのモバイルアプリケーションを開発します。</p>
+                        <a href="#" class="learn-more">詳細を見る</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h3>Webアプリケーション開発</h3>
+                        <p>最新の技術を活用した、使いやすく高機能なWebアプリケーションを開発します。レスポンシブデザインでどのデバイスにも対応します。</p>
+                        <a href="#" class="learn-more">詳細を見る</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="works" class="content-section">
-      <img src="images/top.jpeg" alt="Our Story Image" class="section-image">
-      <h1>Works</h1>
-      <p>BLUECOLORが手掛けたプロジェクトをご紹介します。
-      <a href="story-detail.html" class="read-more-link">Read More</a></p>
+    <!-- 事例セクション -->
+    <section class="section cases" id="cases">
+        <div class="container">
+            <div class="section-title">
+                <h2>事例紹介</h2>
+                <p>Bluecolor, inc.が手掛けた様々なプロジェクト事例をご紹介します。</p>
+            </div>
+            <div class="cases-grid">
+                <div class="case-card">
+                    <img src="/api/placeholder/600/400" alt="金融システム">
+                    <div class="case-content">
+                        <span class="case-category">金融</span>
+                        <h3>次世代オンラインバンキングシステム</h3>
+                        <p>大手銀行向けに、安全性とユーザビリティを兼ね備えた新世代のオンラインバンキングシステムを開発しました。</p>
+                    </div>
+                </div>
+                <div class="case-card">
+                    <img src="/api/placeholder/600/400" alt="物流管理システム">
+                    <div class="case-content">
+                        <span class="case-category">物流</span>
+                        <h3>物流管理システムの最適化</h3>
+                        <p>物流企業向けに、AIを活用した配送ルート最適化システムを開発し、配送効率を30%向上させました。</p>
+                    </div>
+                </div>
+                <div class="case-card">
+                    <img src="/api/placeholder/600/400" alt="ヘルスケアアプリ">
+                    <div class="case-content">
+                        <span class="case-category">ヘルスケア</span>
+                        <h3>患者管理モバイルアプリ</h3>
+                        <p>医療機関向けに、患者情報を一元管理し、診療予約もできる多機能なモバイルアプリケーションを開発しました。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact" class="content-section contact-section">
-      <h1>Contact Us</h1>
-      <p class="text-align-center">お問い合わせはこちらからご連絡ください。</p>
-      <form action="#" method="post">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Send</button>
-      </form>
+    <!-- チームセクション -->
+    <section class="section team" id="team">
+          <div class="container">
+              <div class="section-title">
+                  <h2>チーム紹介</h2>
+                  <p>Bluecolor, inc.のビジョンを実現する情熱的なリーダーをご紹介します。</p>
+              </div>
+              <div class="team-container">
+                  <div class="team-member-single">
+                      <img src="/api/placeholder/400/400" alt="代表取締役">
+                      <div class="team-info-single">
+                          <h3>代表取締役</h3>
+                          <span class="position">CEO & Lead Developer</span>
+                          <p class="team-bio">
+                              複数の業界での開発経験を持ち、クライアントのビジネス課題をテクノロジーで解決することに情熱を注いでいます。
+                              フルスタック開発の専門知識を活かし、革新的なソリューションを提供します。
+                          </p>
+                          <div class="skill-tags">
+                              <span class="skill-tag">ソフトウェア設計</span>
+                              <span class="skill-tag">フルスタック開発</span>
+                              <span class="skill-tag">プロジェクト管理</span>
+                              <span class="skill-tag">UI/UXデザイン</span>
+                              <span class="skill-tag">クラウドアーキテクチャ</span>
+                          </div>
+                          <div class="social-links">
+                            <a href="#" class="social-icon">X</a>
+                            <a href="#" class="social-icon">in</a>
+                            <a href="#" class="social-icon">f</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
+    <section class="story">
+      <div class="container">
+        <h2 class="section-title">STORY</h2>
+        <div class="story-card">
+          <img src="images/story.jpg" alt="ストーリーイメージ">
+          <div class="story-content">
+            <h3>私たちの歩み</h3>
+            <p>創業の想い、そしてこれから目指す未来。<br>Bluecolor, inc.のストーリーをご紹介します。</p>
+            <a href="/story" class="story-link">STORYを見る</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- お問い合わせセクション -->
+  <section class="section contact" id="contact">
+      <div class="container">
+          <div class="section-title">
+              <h2>お問い合わせ</h2>
+              <p>ご質問やお見積りのご依頼など、お気軽にお問い合わせください。</p>
+          </div>
+          <div class="contact-form">
+              <form action="#" method="post">
+                  <div class="form-group">
+                      <label for="name" class="form-label">お名前</label>
+                      <input type="text" id="name" name="name" class="form-input" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email" class="form-label">メールアドレス</label>
+                      <input type="email" id="email" name="email" class="form-input" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="company" class="form-label">会社名</label>
+                      <input type="text" id="company" name="company" class="form-input">
+                  </div>
+                  <div class="form-group">
+                      <label for="message" class="form-label">メッセージ</label>
+                      <textarea id="message" name="message" class="form-input" required></textarea>
+                  </div>
+                  <button type="submit" class="submit-button">送信する</button>
+              </form>
+          </div>
+      </div>
+  </section>
+
+  <!-- フッター -->
   <footer>
-    <p>&copy; 2024 BLUECOLOR. All rights reserved.</p>
+      <div class="container">
+          <div class="footer-grid">
+              <div class="footer-col">
+                  <h4>Company</h4>
+                  <ul class="footer-links">
+                      <li><a href="#">会社概要</a></li>
+                      <li><a href="#">ミッション</a></li>
+                      <li><a href="#">ビジョン</a></li>
+                      <li><a href="#">採用情報</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>Services</h4>
+                  <ul class="footer-links">
+                      <li><a href="#">カスタムソフトウェア開発</a></li>
+                      <li><a href="#">モバイルアプリ開発</a></li>
+                      <li><a href="#">Webアプリケーション開発</a></li>
+                      <li><a href="#">クラウドサービス</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>Support</h4>
+                  <ul class="footer-links">
+                      <li><a href="#">よくある質問</a></li>
+                      <li><a href="#">サポートセンター</a></li>
+                      <li><a href="#">ドキュメント</a></li>
+                      <li><a href="#">お問い合わせ</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col footer-contact">
+                  <h4>Contact</h4>
+                  <p>〒220-0011<br>神奈川県横浜市西区高島2-11-2<br>スカイメナー横浜519</p>
+                  <!-- <p>TEL: 03-1234-5678</p>
+                  <p>info@techsolutions.jp</p> -->
+              </div>
+          </div>
+          <div class="copyright">
+              <p>&copy; 2025 TechSolutions Inc. All rights reserved.</p>
+          </div>
+      </div>
   </footer>
 </body>
 </html>
