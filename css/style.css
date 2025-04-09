@@ -581,6 +581,10 @@ textarea.form-input {
     resize: vertical;
 }
 
+.submit-button-wrap {
+  text-align: center;
+}
+
 .submit-button {
     background-color: #2563eb;
     color: white;
