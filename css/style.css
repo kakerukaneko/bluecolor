@@ -461,11 +461,10 @@
 }
 
 .team-member-single img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 25px;
     border: 5px solid #ebf5ff;
 }
 
@@ -486,7 +485,9 @@
     color: #555;
     max-width: 600px;
     margin: 0 auto 25px;
-    line-height: 1.8;
+    line-height: 1.5;
+    font-size: 15px;
+    letter-spacing: 0.2px;
 }
 
 .skill-tags {
