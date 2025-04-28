@@ -9,243 +9,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/story.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☮️</text></svg>">
-    <style>
-        /* ストーリーページ専用CSS */
-
-/* ストーリーヒーロー */
-.story-hero {
-    position: relative;
-    height: 50vh;
-    min-height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background-image: url('../images/story-hero.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    /* margin-top: 80px; */
-    overflow: hidden;
-}
-
-.story-hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(37, 99, 235, 0.7));
-    z-index: 1;
-
-animation: storyGradient 15s ease infinite;
-}
-
-/* .story-hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(-45deg, #0f172a, #2563eb, #f97316, #facc15, #fde68a);
-  background-size: 400% 400%;
-  animation: storyGradient 15s ease infinite;
-  z-index: 1;
-} */
-
-@keyframes storyGradient {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.story-hero .container {
-    position: relative;
-    z-index: 2;
-}
-
-.story-hero h1 {
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    animation: fadeInUp 1s ease-out;
-}
-
-.story-hero p {
-    font-size: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-    animation: fadeInUp 1s ease-out 0.3s forwards;
-}
-
-/* ストーリーコンテンツ */
-.story-content {
-    padding: 80px 0;
-    background-color: #f8fafc;
-}
-
-.story-content .container {
-    max-width: 900px;
-}
-
-/* タイムライン */
-.story-timeline {
-    position: relative;
-    padding-left: 50px;
-    margin-top: 40px;
-}
-
-.story-timeline::before {
-    content: '';
-    position: absolute;
-    left: 15px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: #2563eb;
-}
-
-.timeline-item {
-    position: relative;
-    margin-bottom: 60px;
-}
-
-.timeline-marker {
-    position: absolute;
-    left: -50px;
-    top: 5px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #2563eb;
-    box-shadow: 0 0 0 4px #ebf5ff;
-}
-
-.timeline-content {
-    background-color: white;
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.timeline-content:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.timeline-content h2 {
-    font-size: 28px;
-    color: #2563eb;
-    margin-bottom: 10px;
-}
-
-.timeline-date {
-    display: inline-block;
-    padding: 4px 12px;
-    background-color: #ebf5ff;
-    color: #2563eb;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.timeline-content p {
-    margin-bottom: 15px;
-    line-height: 1.7;
-    color: #444;
-}
-
-.story-image {
-    margin: 30px 0;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.story-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.5s;
-}
-
-.story-image:hover img {
-    transform: scale(1.03);
-}
-
-.story-cta {
-    margin-top: 30px;
-    text-align: center;
-    padding: 20px;
-    background-color: #ebf5ff;
-    border-radius: 8px;
-}
-
-.story-cta p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.story-cta .cta-button {
-    display: inline-block;
-    padding: 12px 25px;
-    font-size: 16px;
-}
-
-/* レスポンシブデザイン */
-@media (max-width: 768px) {
-    .story-hero h1 {
-        font-size: 36px;
-    }
-    
-    .story-hero p {
-        font-size: 18px;
-    }
-    
-    .story-timeline {
-        padding-left: 30px;
-    }
-    
-    .story-timeline::before {
-        left: 5px;
-    }
-    
-    .timeline-marker {
-        left: -30px;
-        width: 20px;
-        height: 20px;
-    }
-    
-    .timeline-content h2 {
-        font-size: 24px;
-    }
-    
-    .timeline-content {
-        padding: 20px;
-    }
-}
-
-/* アニメーション */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* ストーリーページのリンクを強調 */
-.nav-links a[href="/story"] {
-    color: #2563eb;
-    font-weight: 600;
-}
-    </style>
 </head>
 <body>
     <!-- ヘッダー -->
@@ -282,11 +45,12 @@ animation: storyGradient 15s ease infinite;
                     <div class="timeline-content">
                         <h2>はじまりの青</h2>
                         <span class="timeline-date">2015年</span>
-                        <p>「Bluecolor」という名前には、創業者である私、金子翔の原点が込められています。</p>
-                        <p>私は大学卒業後、横浜にある町工場でエンジニアとして働いていました。そこでは毎日青い作業着を着て、製造現場で汗を流していました。この青い作業着は、日本のものづくりの象徴でもあります。</p>
-                        <p>その青い作業着を着ていた頃、「自分の手でつくるものを通じて、世界に価値を届けたい」という夢を持ち始めました。そして次第に、物理的なものだけでなく、ソフトウェアという形のない価値を届けることに魅力を感じるようになったのです。</p>
+                        <p>「Bluecolor」という名前には、創業者である私、金子の原点が込められています。</p>
+                        <p>高校卒業後、地元・東大阪の町工場で現場作業員として働いていました。  
+                        仕事はルーティンワークの繰り返しで、夏は暑く、冬は寒い。爪の間は油で真っ黒になり、体力的にも精神的にもきつい日々でした。  
+                        休憩中に缶コーヒーを飲みながら、「このままの人生でいいのだろうか」と自問していたのを今でも覚えています。</p>
                         <div class="story-image">
-                            <img src="images/story-workshop.jpg" alt="町工場での作業風景">
+                            <img src="images/kojo.jpg" alt="町工場での作業風景">
                         </div>
                     </div>
                 </div>
@@ -296,8 +60,15 @@ animation: storyGradient 15s ease infinite;
                     <div class="timeline-content">
                         <h2>転機と決断</h2>
                         <span class="timeline-date">2018年</span>
-                        <p>町工場での3年間で学んだことは多かったものの、もっと広い視野で価値創造に関わりたいという思いが強くなっていきました。プログラミングを独学で学び始め、小さなWebサイト制作の仕事を副業として受けるようになりました。</p>
-                        <p>次第に、ソフトウェア開発の可能性に魅了され、思い切って会社を辞め、フリーランスのエンジニアとして活動を始めることにしました。最初は不安も大きかったですが、一つひとつの仕事に真摯に向き合い、クライアントの信頼を得ていきました。</p>
+                        <p>
+                            もともとパソコンを触るのが好きだったこともあり、プログラミングに興味を持ち始めました。<br>
+                            工場を辞めて、プログラミングを学び始めました。
+                            </p>
+                            <p>
+                                プログラミングを学んだ後、現金2万円を手に横浜へ移り、東京の企業でアルバイトとしてキャリアをスタートさせました。<br>
+                                当初は小さな業務からのスタートでしたが、与えられた仕事に全力で向き合うことで、少しずつ信頼と実績を積み重ねることができました。<br>
+                                ありがたいことに、周囲の方々に支えられながら、ご依頼いただける機会も増え、次第に自身のスキルや視野も広がっていきました。
+                            </p>
                     </div>
                 </div>
 
@@ -306,21 +77,20 @@ animation: storyGradient 15s ease infinite;
                     <div class="timeline-content">
                         <h2>Bluecolorの誕生</h2>
                         <span class="timeline-date">2020年</span>
-                        <p>フリーランスとして活動する中で、一人では実現できる価値に限界を感じるようになりました。より大きな課題に取り組み、より大きな価値を生み出すためには、志を同じくする仲間が必要だと考えるようになったのです。</p>
-                        <p>そして2020年、私は「Bluecolor inc.」を設立しました。社名には、私が着ていた青い作業着への敬意と、これから私たちが創っていく新しい「色」、つまり価値への願いを込めました。</p>
+                        <p>
+                        日々仕事に打ち込む中で、ふと気づけば会社を設立できるだけの資金が手元にありました。<br>
+                        このまま会社員として働き続けるという選択肢もありましたが、人生は一度きり。<br>
+                        直感に従い、「自分の手で会社を立ち上げてみたい」と強く思うようになりました。
+                        </p>
+                        <p>
+                        2020年、「Bluecolor inc.」を設立。<br>
+                        社名には、かつて町工場で着ていた青い作業着への敬意と、あの頃の初心を忘れたくないという想いを込めています。<br>
+                        “Bluecolor（ブルーカラー）”とは、もともと肉体労働に従事する人々を指す言葉。<br>
+                        ITという新たな領域で挑戦しながらも、自らの原点を大切にし続けたい——その想いが、この社名に込められています。
+                        </p>
                         <div class="story-image">
-                            <img src="images/story-office.jpg" alt="Bluecolorのオフィス">
+                            <img src="images/office.jpg" alt="Bluecolorのオフィス">
                         </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h2>価値を届ける日々</h2>
-                        <span class="timeline-date">2020年〜現在</span>
-                        <p>Bluecolor inc.では、「変わらない価値をつくる」という理念を掲げ、日々活動しています。技術は日進月歩で変化していきますが、私たちが大切にしているのは、その先にある「人々の生活や仕事をより良くする」という不変の価値です。</p>
-                        <p>町工場で学んだ「現場主義」と「継続的改善」の精神は、ソフトウェア開発においても私たちの根幹となっています。クライアントの課題に寄り添い、時には泥臭く、時には創造的に解決策を導き出す。その姿勢は、青い作業着を着ていた頃から変わっていません。</p>
                     </div>
                 </div>
 
@@ -329,11 +99,18 @@ animation: storyGradient 15s ease infinite;
                     <div class="timeline-content">
                         <h2>これからの青</h2>
                         <span class="timeline-date">未来へ</span>
+                        <p>
+                            高校卒業後、手探りでいろいろな文化に触れました。
+                            本を読み、美術館に行き、建築を見上げ、音楽を聴くなかで、
+                            「良いものは、時間が経っても心に残る」ということを実感しました。
+                        </p>
+                        <p>
+                            Bluecolor inc.は、まだ小さな会社です。
+                            けれど、小さいからこそ、目の前の一つひとつに丁寧に向き合い、
+                            時代に流されず、長く残る価値を届けていきたいと考えています。
+                        </p>
                         <p>Bluecolor inc.は、まだ小さな会社です。しかし、私たちのビジョンは大きく、「時代が変わっても、ずっと残るソフトウェアや価値を届けたい」という思いで日々歩みを進めています。</p>
                         <p>青い作業着に象徴される日本のものづくりの精神と、最新のテクノロジーを融合させることで、これからも新しい価値を創造し続けます。そして、その価値が人々の生活や仕事を豊かにし、社会に少しでも良い影響を与えられることを願っています。</p>
-                        <div class="story-image">
-                            <img src="images/story-future.jpg" alt="未来を見据えるBluecolor">
-                        </div>
                         <div class="story-cta">
                             <p>私たちと一緒に、未来を創っていきませんか？</p>
                             <a href="index.html#contact" class="cta-button">お問い合わせ</a>
