@@ -698,7 +698,8 @@ footer {
 }
 
 /* レスポンシブデザイン */
-@media (max-width: 768px){
+/* @media (max-width: 768px){ */
+@media (max-width: 918px){
     .navbar{
         flex-direction:column;
         padding:15px 0;
@@ -951,4 +952,56 @@ footer {
 .nav-links a[href="/story"] {
     color: #2563eb;
     font-weight: 600;
+}
+
+/* 会社概要セクション */
+.about-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-item {
+    display: flex;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 20px;
+}
+
+.about-label {
+    font-weight: 600;
+    color: #2563eb;
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.about-text {
+    flex: 1;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .about-label {
+        width: 100%;
+    }
 }
