@@ -698,7 +698,8 @@ footer {
 }
 
 /* レスポンシブデザイン */
-@media (max-width: 768px){
+/* @media (max-width: 768px){ */
+@media (max-width: 918px){
     .navbar{
         flex-direction:column;
         padding:15px 0;
@@ -732,5 +733,275 @@ footer {
     }
     .contact-form{
         padding:30px 20px;
+    }
+}
+
+/* ストーリーセクション */
+
+/* ストーリーヒーロー */
+.story-hero {
+    position: relative;
+    height: 50vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: url('../images/story-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    /* margin-top: 80px; */
+    overflow: hidden;
+}
+
+.story-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(-45deg, #2563eb, #3b82f6, #06b6d4, #6366f1, #8b5cf6);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+}
+
+.story-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.story-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.story-hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease-out 0.3s forwards;
+}
+
+/* ストーリーコンテンツ */
+.story-content {
+    padding: 80px 0;
+    background-color: #f8fafc;
+}
+
+.story-content .container {
+    max-width: 900px;
+}
+
+/* タイムライン */
+.story-timeline {
+    position: relative;
+    padding-left: 50px;
+    margin-top: 40px;
+}
+
+.story-timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #2563eb;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -50px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #2563eb;
+    box-shadow: 0 0 0 4px #ebf5ff;
+}
+
+.timeline-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h2 {
+    font-size: 28px;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.timeline-date {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: #ebf5ff;
+    color: #2563eb;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.timeline-content p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #444;
+}
+
+.story-image {
+    margin: 30px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.story-image:hover img {
+    transform: scale(1.03);
+}
+
+.story-cta {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: #ebf5ff;
+    border-radius: 8px;
+}
+
+.story-cta p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.story-cta .cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 16px;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .story-hero h1 {
+        font-size: 36px;
+    }
+
+    .story-hero p {
+        font-size: 18px;
+    }
+
+    .story-timeline {
+        padding-left: 30px;
+    }
+
+    .story-timeline::before {
+        left: 5px;
+    }
+
+    .timeline-marker {
+        left: -30px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .timeline-content h2 {
+        font-size: 24px;
+    }
+
+    .timeline-content {
+        padding: 20px;
+    }
+}
+
+/* アニメーション */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ストーリーページのリンクを強調 */
+.nav-links a[href="/story"] {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+/* 会社概要セクション */
+.about-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-item {
+    display: flex;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 20px;
+}
+
+.about-label {
+    font-weight: 600;
+    color: #2563eb;
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.about-text {
+    flex: 1;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .about-label {
+        width: 100%;
     }
 }
