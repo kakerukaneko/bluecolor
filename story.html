@@ -15,16 +15,9 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <div class="logo">Bluecolor inc.</span></div>
-                <ul class="nav-links">
-                    <li><a href="index.html#home">ホーム</a></li>
-                    <li><a href="index.html#services">サービス</a></li>
-                    <li><a href="index.html#cases">事例</a></li>
-                    <li><a href="index.html#team">チーム</a></li>
-                    <li><a href="index.html#story">ストーリー</a></li>
-                    <li><a href="index.html#company">会社概要</a></li>
-                    <li><a href="index.html#contact" class="cta-button">お問い合わせ</a></li>
-                </ul>
+                <div class="logo">
+                    <a href="index.html">Bluecolor inc.</a>
+                </div>
             </nav>
         </div>
     </header>
@@ -157,5 +150,15 @@
         </div>
         </div>
     </footer>
+    <script>
+        window.addEventListener('scroll', function () {
+          const header = document.querySelector('header');
+          if (window.scrollY > 450) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+        });
+      </script>
 </body>
 </html>

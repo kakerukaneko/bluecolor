@@ -1,7 +1,5 @@
   /* ヘッダーセクション */
   header {
-    background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -17,13 +15,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .logo {
     font-size: 28px;
     font-weight: 700;
-    color: #2563eb;
+}
+
+.logo a {
+    color: white;
 }
 
 .logo span {
@@ -702,15 +703,10 @@ footer {
 @media (max-width: 918px){
     .navbar{
         flex-direction:column;
-        padding:15px 0;
+        padding: 10px 0;
     }
     .nav-links{
-        margin-top:15px;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-    .nav-links li{
-        margin:5px 10px;
+        display: none !important;
     }
     .hero{
         padding: 200px 0 70px;
@@ -1005,3 +1001,29 @@ footer {
         width: 100%;
     }
 }
+
+/* スクロール後のヘッダーに適用するクラス */
+header.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  /* ロゴやリンクの色調整（白背景に合うように） */
+  header.scrolled .logo {
+    color: #2563eb;
+  }
+  
+  header.scrolled .nav-links a {
+    color: #333;
+  }
+  
+  header.scrolled .nav-links .cta-button {
+    background-color: #2563eb;
+    color: white !important;
+  }
+
+  header.scrolled .logo a {
+    color: #2563eb;
+  }
+  
