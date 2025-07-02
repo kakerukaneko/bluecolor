@@ -14,16 +14,9 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <div class="logo">Bluecolor inc.</span></div>
-                <ul class="nav-links">
-                    <li><a href="#home">ホーム</a></li>
-                    <li><a href="#services">サービス</a></li>
-                    <li><a href="#cases">事例</a></li>
-                    <li><a href="#team">チーム</a></li>
-                    <li><a href="#story">ストーリー</a></li>
-                    <li><a href="#company">会社概要</a></li>
-                    <li><a href="#contact" class="cta-button">お問い合わせ</a></li>
-                </ul>
+                <div class="logo">
+                    <a href="index.html">Bluecolor inc.</a>
+                </div>
             </nav>
         </div>
     </header>
@@ -170,7 +163,6 @@
               </div>
               <div class="team-container">
                   <div class="team-member-single">
-                      <img src="images/profile.jpg" alt="代表取締役">
                       <div class="team-info-single">
                           <h3>金子 翔</h3>
                           <span class="position">代表取締役 & Lead Developer</span>
@@ -321,5 +313,15 @@
       </div>
     </div>
   </footer>
+  <script>
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      if (window.scrollY > 450) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 </html>
