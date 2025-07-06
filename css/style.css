@@ -71,6 +71,7 @@
 
 /* ヒーローセクション */
 .hero {
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
   color: white;
@@ -709,7 +710,7 @@ footer {
         display: none !important;
     }
     .hero{
-        padding: 200px 0 70px;
+        padding: 200px 0 75px;
     }
     .hero h1{
         font-size:32px;
@@ -1026,4 +1027,3 @@ header.scrolled {
   header.scrolled .logo a {
     color: #2563eb;
   }
-  
